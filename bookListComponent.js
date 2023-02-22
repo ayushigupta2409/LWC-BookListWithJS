@@ -9,9 +9,9 @@ export default class BookListComponent extends LightningElement {
         this.fetchBookData()
     }//in order to show data on page load, we use connectedcallback lifecyclehook
     fetchBookData(){
-        fetch(BOOK_URL+this.query)//fetch api in js provides interface for fetching resources and this fetch method return a promise
-        //to which we apply then and catch
-        .then(response=>response.json())/*response is not in json, so we convert it into json. Also, in js, if then()
+        fetch(BOOK_URL+this.query).then(response=>response.json())
+        /*fetch api in js provides interface for fetching resources and this fetch method return a promise to which we apply then and catch
+        response is not in json, so we convert it into json. Also, in js, if then()
         returns something, it is another promise altogether, so we put then and catch over that
         */
         .then(data=>{
