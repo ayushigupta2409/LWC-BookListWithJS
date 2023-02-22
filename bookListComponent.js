@@ -13,6 +13,7 @@ export default class BookListComponent extends LightningElement {
         /*fetch api in js provides interface for fetching resources and this fetch method return a promise to which we apply then and catch
         response is not in json, so we convert it into json. Also, in js, if then()
         returns something, it is another promise altogether, so we put then and catch over that
+        here .json() will again return a promise so we use then and catch over it
         */
         .then(data=>{
             console.log(data)
