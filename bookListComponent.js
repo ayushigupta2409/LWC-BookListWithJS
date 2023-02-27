@@ -1,6 +1,6 @@
 import { LightningElement } from 'lwc'
-const BOOK_URL = 'https://www.googleapis.com/books/v1/volumes?q='
 
+const BOOK_URL = 'https://www.googleapis.com/books/v1/volumes?q='
 export default class BookListComponent extends LightningElement {
     query='life'
     books
